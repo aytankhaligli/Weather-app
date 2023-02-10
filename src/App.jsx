@@ -39,10 +39,10 @@ function App() {
         if (!!location) {
           const res = isSearching
             ? await fetch(
-                `http://api.weatherapi.com/v1/forecast.json?key=aa7eb6f4f4284e48b3a162507231002&q=${city}&days=5`
+                `https://api.weatherapi.com/v1/forecast.json?key=aa7eb6f4f4284e48b3a162507231002&q=${city}&days=5`
               )
             : await fetch(
-                `http://api.weatherapi.com/v1/forecast.json?key=aa7eb6f4f4284e48b3a162507231002&q=${location.lat},${location.lng}&days=5`
+                `https://api.weatherapi.com/v1/forecast.json?key=aa7eb6f4f4284e48b3a162507231002&q=${location.lat},${location.lng}&days=5`
               );
           const data = await res.json();
           setWeatherData(data);
