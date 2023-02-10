@@ -39,7 +39,7 @@ export default function WeatherCard({
   if (weekDayNumber === 6) weekDay = weekdays[id];
 
   return (
-    <div className="flex flex-col items-center bg-midnight py-5 px-6 ">
+    <div className="flex flex-col items-center justify-around bg-midnight py-5 px-6 ">
       <p className="font-medium mb-3 text-gray-200">
         {id === 0 ? "Tomorrow" : `${weekDay},${weatherDate[1]} ${monthName}`}
       </p>
