@@ -9,7 +9,7 @@ export default function Hightlights({
   pressure_mb,
   navIcon,
 }) {
-  const humidtyWidth = humidity + 100 + "px";
+  const humidtyWidth = (229 * humidity) / 100 + "px";
 
   return (
     <div className=" mb-24 px-6 md:p-0">
