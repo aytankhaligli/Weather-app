@@ -33,9 +33,7 @@ export default function WeatherCard({
   const weekDayNumber = weekdays.findIndex((curr) => curr === day);
 
   let weekDay;
-  if (weekDayNumber < 6 && id < 2) weekDay = weekdays[weekDayNumber + id + 1];
-  if (weekDayNumber < 6 && id > 0)
-    weekDay = weekdays[weekDayNumber + id - 7 + 1];
+  if (weekDayNumber < 6) weekDay = weekdays[weekDayNumber + id + 1];
   if (weekDayNumber === 6) weekDay = weekdays[id];
 
   return (
